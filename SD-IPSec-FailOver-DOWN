@@ -1,0 +1,18 @@
+#######################################
+########## Syaher Surya ############
+# Script Deteksi Primary remote address ipsecc Link Down
+# note: cara kerjanya mendeteksi dengan ping
+#######################################
+:local ia "xxx.xxx.xxx.xxx"
+:local io "yyy.dyndns.org"
+:local c "Change it with policy & peer comment"
+#######################################
+####### DO NOT CHANGE ANY BELOW #########
+:local ic [/ip ipsec peer get [find comment="$c"] address]
+:local ai [:pick $ic 0 [:find $ic "/"]]
+:local oi [:resolve $io]
+:if ($ia != $ai) do={
+/ip ipsec policy set [find comment="$c"] sa-dst-address=$ia
+/ip ipsec peer set [find comment="$c"] address=$ia
+:log info "IPSec Rotate - Sebelum=$ai - Sesudah=$ia" 
+}
