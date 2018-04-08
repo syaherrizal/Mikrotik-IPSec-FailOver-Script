@@ -5,11 +5,10 @@ Before use this script make sure you read thinks below
 2. This failover script only work to failover responder IP Address
 2. This failover script user mikrotik tools (Netwatch)
 
-1. Dynamic Destination Address
+Dynamic Destination Address
 SD-IPSec-FailOver-DOWN 
 SD-IPSec-FailOver-UP
-
-2. Static Destination Address
+Static Destination Address
 SS-IPSec-FailOver-DOWN
 SS-IPSec-FailOver-UP 
 
