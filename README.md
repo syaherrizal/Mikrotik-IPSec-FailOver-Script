@@ -6,6 +6,7 @@ Before use this script make sure you read thinks below
 2. This failover script user mikrotik tools (Netwatch)
 
 Make sure to set primary host to monitor example "xxx.xxx.xxx.xxx" also interval and timeout value.
+Make sure to set comment in policy and peer, this help script witch rule will be change the value.
 
 How its work?
 Condition 1 : Primary host UP
