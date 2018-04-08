@@ -5,20 +5,15 @@ Before use this script make sure you read thinks below
 2. This failover script only work to failover responder IP Address
 2. This failover script user mikrotik tools (Netwatch)
 
-Dynamic Destination Address
-SD-IPSec-FailOver-DOWN 
-SD-IPSec-FailOver-UP
-Static Destination Address
-SS-IPSec-FailOver-DOWN
-SS-IPSec-FailOver-UP 
-
-
+- Dynamic Destination Address
+  SD-IPSec-FailOver-DOWN 
+  SD-IPSec-FailOver-UP
+- Static Destination Address
+  SS-IPSec-FailOver-DOWN
+  SS-IPSec-FailOver-UP 
 
 Make sure to set primary host to monitor example "xxx.xxx.xxx.xxx" also interval and timeout value.
-
 Make sure to set comment in policy and peer, this help script detect witch rule will be change the value.
-
-
 
 How its work?
 Condition 1 : Primary host UP
