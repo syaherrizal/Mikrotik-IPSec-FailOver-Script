@@ -1,7 +1,7 @@
 # Mikrotik-IPSec-FailOver
 Before use this script make sure you read thinks below
 
-1. This failover script only use for IPSec peer with static destination ip address
+1. This failover script only work for IPSec peer with static destination ip address
 2. This failover script only work to failover responder IP Address
 2. This failover script user mikrotik tools (Netwatch)
 
